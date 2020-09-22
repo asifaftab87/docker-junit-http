@@ -42,7 +42,12 @@ Steps to deploy sprint boot application in docker
    Our docker image file ready and we can push in to docker by using command
    docker run -p 8080:8080 -t image-name
    
-   
+  
+  To stop docker container
+  first we have to check what is name of our container 
+  docker ps -a
+  
+  docker stop my_container_name
 
 
    
