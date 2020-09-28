@@ -41,15 +41,21 @@ Steps to deploy sprint boot application in docker
 3. Go to your project root directory and open command prompt there
    Create a docker image by using below command, here image-name is the name I used for my docker image
    You can give other name as your wish
+   
    docker build -t image-name . 
+   
    To check your docker image please run below command in same command prompt 
+   
    docker images
+   
    Our docker image file ready and we can push in to docker by using command
+   
    docker run -p 8080:8080 -t image-name
    
   
   To stop docker container
   first we have to check what is name of our container 
+  
   docker ps -a
   
   docker stop my_container_name
