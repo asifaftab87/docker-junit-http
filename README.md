@@ -27,11 +27,16 @@ Steps to deploy sprint boot application in docker
 2. First have to create a file namely "Dockerfile", please don't give any extension.
    Dockerfile should be inside the project root folder or u can say same folder as pom.xml file.
    Add these lines of code inside Dockerfile
+   
    FROM java:8
+   
    EXPOSE 8080
+   
    ADD /target/docker-0.1.jar docker.jar
+   
    ENTRYPOINT ["java", "-jar", "docker.jar"]
-   save file
+   
+   then save file
    
 3. Go to your project root directory and open command prompt there
    Create a docker image by using below command, here image-name is the name I used for my docker image
